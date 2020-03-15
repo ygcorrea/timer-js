@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap");
+:root {
+  --primary-color: rgb(182, 197, 201);
+}
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+}
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+.container {
+  max-width: 640px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 3px dotted;
+  border-radius: 10px;
+}
+.clock {
+  justify-content: center;
+  display: flex;
+  font-size: 3em;
+}
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+.buttons button {
+  background-color: #fff;
+  border-radius: 10px;
+  width: 10em;
+  height: 3em;
+  font-weight: 700;
+}
+.stopped-button {
+  color: red;
+}
+.dark-mode-buttom {
+  margin: 50px 0 0 30px;
+  width: 5vw;
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* button ~ toggle */
+.toggle > label {
+  position: relative;
+  display: block;
+  height: 20px;
+  width: 44px;
+  background: #898989;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.toggle > label:after {
+  position: absolute;
+  left: -2px;
+  top: -3px;
+  display: block;
+  width: 26px;
+  height: 26px;
+  border-radius: 100px;
+  background: #fff;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.05);
+  content: "";
+  transition: all 0.3s ease;
+}
+.toggle > label:active:after {
+  transform: scale(1.15, 0.85);
+}
+.toggle > input:checked ~ label {
+  background: #6fbeb5;
+}
+.toggle > input:checked ~ label:after {
+  left: 20px;
+  background: #179588;
+}
+
+.toggle {
+  margin-bottom: 40px;
+}
+.toggle > input {
+  display: none;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--primary-color);
+  font-family: "Open sans", sans-serif;
+  font-size: 1.3em;
+  line-height: 1.5em;
+}
+
+form input,
+form label,
+form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+form input {
+  font-size: 24px;
+  height: 50px;
+  padding: 0 20px;
+}
+
+form input:focus {
+  outline: 1px solid var(--primary-color);
+}
+
+form button {
+  border: none;
+  background: var(--primary-color);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  height: 50px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+form button:hover {
+  background: var(--primary-color-darker);
+}
