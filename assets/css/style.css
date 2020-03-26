@@ -37,7 +37,7 @@
 .stopped-button {
   color: red;
 }
-.dark-mode-buttom {
+.dark-mode-button {
   margin: 50px 0 0 30px;
   width: 5vw;
   height: 5vh;
@@ -87,6 +87,7 @@
 .toggle > input {
   display: none;
 }
+/* */
 
 h1 {
   display: flex;
@@ -108,29 +109,4 @@ form button {
   display: block;
   width: 100%;
   margin-bottom: 10px;
-}
-
-form input {
-  font-size: 24px;
-  height: 50px;
-  padding: 0 20px;
-}
-
-form input:focus {
-  outline: 1px solid var(--primary-color);
-}
-
-form button {
-  border: none;
-  background: var(--primary-color);
-  color: #fff;
-  font-size: 18px;
-  font-weight: 700;
-  height: 50px;
-  cursor: pointer;
-  margin-top: 30px;
-}
-
-form button:hover {
-  background: var(--primary-color-darker);
 }
